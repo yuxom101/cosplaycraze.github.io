@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign In Forms</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+
+    <div class="forms2">
+        <form>
+            
+            <p stye="font-weight: bold;">Log In</p>
+
+            <p stye="font-weight: bold;">Username</p>
+            <input type="text" id="emailAddress" name="newUserEmail" placeholder="Enter Username" required >
+
+            <p stye="font-weight: bold;">Confirm Password</p>
+            <input type="password" id="newConfirmPassword" name="newUserConfirmPassword" placeholder="Enter Password" required>
+            
+            <p stye="font-weight: bold;">Remember Me</p>
+                <input type="checkbox" id="rememberMe" name="rememberUser">
+
+            <div class="groupButtons">
+                <button type="submit" id="cancelButton" onclick="cancelLogIn()">Cancel</button>
+                <button type="submit" id="confirmDetails" onclick="confirmUserLogIn()">Confirm</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

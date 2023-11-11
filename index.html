@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/cosplayCrazeLogo.png  " type="Image">
+    <title>Cosplay Craze</title>
+    <link rel="stylesheet" href="CSS Files/homePage.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+
+        <header>
+            <div class="timeInfo"><img src="images/timeSymbol.png"><p>Monday-Saturday, 8am to 7pm</p></div>
+            <div class="phoneInfo"><img src="images/phoneSymbol.jpg"><p>+63994-983-3694</p></div>
+            <div class="locationInfo"><img src="images/locationSymbol.png"><p>CDO, Philippines</p></div>
+        </header>
+        
+
+    <div class="navbar">
+
+            <div class="logo">
+                <img src="images/cosplayCrazeLogo.png" alt="logo" onclick="openProfile()">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Costumes</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
+
+    </div>
+        <div class="content-container">
+
+        <div class="left-column">
+            <p>Unlock Your Imagination with Cosplay Craze: <span style="color:#ffed4b;">Where Costumes Come to Life!</span></p>
+            <p>Unlock Your Creativity with Our Premium Costumes and Accessories."</p>
+            <ul>
+                <li>Our rental costumes are primarily based on anime and video game characters.</li>
+                <li>Our collection includes a wide range of authentic and quality costumes.</li>
+                <li>We offer an extensive selection of accessories.</li>
+            </ul>
+            <a href="#" class="rentNowBtn" onclick="openSignUp()">Rent Now!</a>
+        </div>
+
+        <div class="right-column">
+            <!-- <img src="images/mikasaHomePage.png" alt="Image" class="rightImage"> -->
+            <img src="images/mikasaHomePage.png" alt="Image" class="rightImage">
+        </div>
+
+    </div>
+
+        <div class="forms">
+            <form>
+                
+                <h2 style="font-weight: bold;">Sign Up</h2>
+    
+                <p style="font-weight: bold;">Email Address</p>
+                <input type="email" id="newEmailAddress" name="newUserEmail" placeholder="Enter Email Address">
+
+                <p style="font-weight: bold;">User Name</p>
+                <input type="text" id="uName" uName="firstName" placeholder="Create A Username">                       
+
+                <p style="font-weight: bold;">Contact Number</p>
+                <input type="text" id="contactNumber" name="contact" placeholder="Phone Number">
+    
+                <p style="font-weight: bold;">Create Password</p>
+                <input type="password" id="newCreatePassword" name="newUserPassword" placeholder="Enter Password">
+    
+                <p style="font-weight: bold;">Confirm Password</p>
+                <input type="password" id="newConfirmPassword" name="newUserConfirmPassword" placeholder="Confirm your Password">
+                
+                <div class="accountAlready">
+                    <p style="font-weight: bold;">ALREADY HAVE AN ACCOUNT? <a href="#" onclick="openLogIn()"><span style="color: orange; text-decoration: underline;">LOG IN</span></a></p>
+                </div>
+
+
+                <div class="groupButtons">
+                    <button type="submit" id="cancelButton" onclick="cancelSignUp()">Cancel</button>
+                    <button type="submit" id="confirmDetails" onclick="confirmUserDetails()">Confirm</button>
+                </div>
+                
+    
+            </form>
+        </div>
+
+        <div class="forms2">
+            <form>
+                
+                <div class ="forms2-content">
+
+                    <p stye="font-weight: bold;">Log In</p>
+    
+                    <p stye="font-weight: bold;">Username</p>
+                    <input type="text" id="emailAddress" name="newUserEmail" placeholder="Enter Username">
+    
+                    <p stye="font-weight: bold;">Enter Password</p>
+                    <input type="password" id="newConfirmPassword" name="newUserConfirmPassword" placeholder="Enter Password">
+
+                </div>
+
+                <div class="rememberMeClass">
+                
+                    <p stye="font-weight: bold;">Remember Me</p>
+                    <input type="checkbox" id="rememberMe" name="rememberUser">
+
+                </div>
+                
+                <div class="groupButtons2">
+                    <button type="submit" id="cancelButton" onclick="cancelLogIn()">Cancel</button>
+                    <button type="submit" id="confirmDetails" onclick="confirmUserLogIn()">Log In</button>
+                </div>
+    
+    
+            </form>
+        </div>
+
+
+        <div class="visualCredibility">
+
+            <div class="cosCommunity">
+                <section>
+                    <img src="images/cosCommunity.jpg" alt="Cosplay Community">
+                    <p style="color: #B19CD9; font-weight: 800px; text-align: center; text-align: center;">💬 Hear from Our Cosplay Community 💬</p>
+                    <p style="color: #FF6B81; text-align: center;">Discover what our customers have to say about their cosplay experiences with us.
+                     Keep updated with the upcoming cosplay events by following and joining the local cosplay community, 
+                     join us now and share your own testimonial!</p>
+                </section>
+            </div>
+            <div class="FAQs">
+                <section>
+                    <img src="images/FAQs.png" alt="FAQs">
+
+                    <p style="color: #B19CD9; font-weight: 800px; text-align: center;">🔮 Frequently Asked Questions 🔮</p>
+                    <p style="color: #FF6B81; text-align: center;"> <span style="color: #B19CD9; font-weight: 800px;">1. How do I know your costumes will fit me?</span> You can check the sizes of the costumes.
+                        <span style="color: #B19CD9; font-weight: 600px;">2. Are your costumes clean and well-maintained?</span> Our costumes are clean ensuring they look and feel brand new.
+                        <span style="color: #B19CD9; font-weight: 600px;">3. What if the costumes are returned late?</span>
+                         Late returns may incur additional fees. Please review our <span style="text-decoration: underline; cursor: pointer;">
+                        rental policy</span> for details.
+                    </p>
+                </section>
+            </div>
+            <div class="qualityAssurance">
+                <section>
+                    <img src="images/quality.png" alt="qualityLogo">
+                    <p style="color: #B19CD9; font-weight: 800px; text-align: center;">🌟 Unmatched Quality 🌟</p>
+                    <p style="color: #FF6B81; cursor: pointer; text-align: center;" >At <span style="color: yellow; text-align: center;">Cosplay Craze</span>, Our costumes are a labor of love.
+                         meticulously crafted to capture every detail of your favorite characters. We spare no effort to 
+                         ensure that our costumes meet the highest standards of quality and authenticity.
+                    </p>
+                </section>
+            </div>
+
+        </div>
+
+        <div class="services">
+            <div class="service-1">
+                 <p style="font-weight: bold; color: #ff37af;">Cosplay Inspiration and Trends</p>
+                 <p>Staying updated with cosplay trends is like flipping through a fashion magazine for cosplayers.
+                     Our cosplay inspiration and trends section provides regular updates on popular characters,
+                    costume styles, and cosplay ideas. Think of it as your fashion blog for the cosplay world, 
+                    helping you stay in vogue with the latest trends and character inspirations.</p> 
+            </div>
+            <div class="service-2">
+                 <p style="font-weight: bold; color: #ff37af;">Cosplay Accessories and Props</p>
+                 <p>Just as every hero needs their trusty sidekick, every cosplayer needs the right accessories and props to complete their look.
+                 Our cosplay accessory and prop service offers a wide selection of wigs, weapons, masks, and more. 
+                 It's like having a treasure chest of finishing touches to enhance your cosplay character's authenticity. 
+                 Elevate your cosplay game with the perfect accessories!</p>
+            </div>
+            <div class="service-3">
+                 <p style="font-weight: bold;  color: #ff37af;">Cosplay Consultations</p>
+                 <p>Just as you might consult with a stylist for a new wardrobe, our cosplay consultations connect you with experienced 
+                    cosplayers who can help you plan your costume and character portrayal. Think of it as having a cosplay coach to guide 
+                    you on character research, costume selection, and makeup tips to make your cosplay truly exceptional.</p>
+            </div>
+
+        </div>
+
+        <div class="socials">
+            <div class="footerHeader"><h2>- Follow Us -</h2></div>
+
+            <div class="followUsLogos">
+            
+                <div class="facebook"><img src="images/Facebook.png" alt="YT Logo"></div>
+            
+                <div class="instagram"><img src="images/Instagram.png" alt="Instagram Logo"></div>
+            
+                <div class="tiktok"><img src="images/Tiktok.png" alt="Tiktok Logo"></div>
+            
+            </div>
+        </div>
+</body>
+</html>

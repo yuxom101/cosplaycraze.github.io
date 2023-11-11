@@ -1,0 +1,547 @@
+/* Reset default styles */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(white rgb(42, 42, 42));
+}
+
+/* Navbar container */
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: #57375D;  
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 10px;
+    justify-content: space-between;
+}
+
+
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 7% !important; 
+    font-size: 20px;
+}
+
+.navbar li {
+    margin-left: 10px;
+}
+
+/* Logo image */
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Navbar links */
+.navbar a {
+    color: white;   
+    text-decoration: none;
+    padding: 29px 20px;
+}
+
+/* Change the link color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Style the navigation links */
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-left: 8px;
+}
+
+/* Two columns below navbar */
+.content-container {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+}
+
+
+/* Left column */
+.left-column {
+    width: 55%;
+    background: linear-gradient(to top, #FF9B82, #FF3FA4); /* Gradient background */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+/* Button style */
+.rentNowBtn {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(87, 214, 140);
+    color: rgb(105, 65, 65);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.left-column p:first-child {
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.left-column p:nth-child(2) {
+    font-size: 25px;
+    color: #fcf2b8;
+    font-weight: 550;
+    font-family: serif;
+    text-align: center;
+
+}
+
+.left-column ul {
+    color: #d9e9fc;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: serif; 
+}
+
+
+.right-column {
+    width: 45%;
+    background: linear-gradient(to bottom, #ffffff, #FFC8C8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+
+.right-column img {
+    height: 600px;
+    align-self: flex-end;
+}
+
+/* FORMS */
+.forms,
+.forms2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+/* FORM SIGN UP */
+
+.forms form{
+    height: 670px;
+    width: 300px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 30%;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forms2 form{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 30%;
+    margin-top: 15%;
+    flex-wrap: wrap;
+}
+
+/* Style for form headings */
+.forms form h1,
+.forms2 form h1 {
+    margin-left: 38%;
+}
+
+/* Style for form labels */
+.forms form p,
+.forms2 form p {
+    font-size: 13px;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 0; /* Reset margin */
+    margin-bottom: 10px;
+}
+
+/* Style for form input fields */
+.forms form input[type="text"],
+.forms form input[type="password"],
+.forms form input[type="date"],
+.forms form input[type="email"],
+.forms2 form input[type="text"],
+.forms2 form input[type="password"],
+.forms2 form input[type="date"],
+.forms2 form input[type="email"] {
+    width: 69%; /* Set the width of form elements to 48% for a horizontal layout */
+    height: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-right: 2%; /* Add a small gap between form elements */
+}
+
+/* Style for form buttons */
+.groupButtons,
+.groupButtons2 {
+    text-align: center;
+    margin-top: 5px;
+    width: 100%; /* Make the button group span the full width of the form */
+}
+
+.groupButtons button,
+.groupButtons2 button {
+    margin: 0 10px; /* Add space between buttons */
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+/* Style for the "Cancel" button */
+.groupButtons button:first-child,
+.groupButtons2 button:first-child {
+    background-color: rgb(255, 76, 76);
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+}
+
+/* Style for the "Confirm" or "Log In" button */
+.groupButtons button:nth-child(2),
+.groupButtons2 button:nth-child(2) {
+    background-color: rgb(0, 115, 255);
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.accountAlready {
+    text-align: center;
+} 
+
+.rememberMeClass {
+    margin-left: 10%;
+}
+
+    /* VISUAL CREDIBILITY SECTION */
+
+.visualCredibility {
+    height: 680px;
+    width: 100%;
+    background-color: rgb(255, 170, 170);
+    margin-top: 100px;
+    display:flex;
+    margin-left: 0%;
+}
+
+.visualCredibility p {
+    font-size: 7px;
+}
+
+.visualCredibility div {
+    height: 277px;
+    width: 200px;
+    margin-top: 3%;
+    background: linear-gradient(to bottom, rgb(226, 226, 226), rgb(255, 211, 211));
+    margin-left: 15%;
+    border-radius: 0px;
+}
+
+.visualCredibility section {
+    height: 215px;
+    width: 140px;
+    margin: 10px 15px 15px 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.cosCommunity img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px; 
+    margin-left: 0%;
+    margin-top: 0%;          
+}
+
+.visualCredibility img {
+    height: 100px;
+    width: 100px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+
+    /* MEDIA QUERY OR RESPONSIVENESSS */
+
+    @media (max-width: 500px) {
+
+        /* NAVIGATION BAR */
+
+.navbar {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+        }
+.logo {
+            margin-bottom: 10px;
+            margin-left: 0%;
+        }
+.navbar a {
+            margin: 5px 0;
+        }
+    
+.navbar ul{
+            font-size: 0.7rem;
+            padding: 0px 0px 0px 0px;
+            margin-left: 0px;
+            float: left;
+        }
+
+        /* FIRST AND SECOND CONTENT */
+
+.content-container {
+            flex: auto;
+            height: 35vh;
+        }
+    
+        /* LEFT COLUMN */
+
+.left-column {
+            width: 40%;
+            
+        }
+    
+.left-column p:first-child {
+        font-size: 1rem;
+        color: white;
+        }
+    
+.left-column p:nth-child(2) {
+            font-size: 0.78rem;
+        }
+    
+.left-column ul {
+            color: white;
+            font-size: 0.5rem;
+        }
+
+.rentNowBtn {
+            border-radius: 10px;
+            display: inline-block;
+            background-color: rgb(87, 214, 140);
+            color: rgb(105, 65, 65);
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 0.4rem;
+            height: 1px;
+            width: 36px;
+        }
+    
+        /* RIGHT COLUMN */
+
+.right-column {
+            width: 47.8%;
+            float: left;
+            margin-left: 0%;
+        }
+        .right-column img {
+            height: 200px;
+        }
+
+.forms,
+.forms2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    }
+
+    /* FORM SIGN UP */
+
+.forms form{
+    height: 460px;
+    width: 200px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+    margin-left: 23%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    font-size: 5px;
+    }
+
+.forms2 form{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 25%;
+    margin-top: 15%;
+    flex-wrap: wrap;
+    }
+
+    /* Style for form headings */
+.forms form h1,
+.forms2 form h1 {
+    margin-left: 38%;
+    }
+
+    /* Style for form labels */
+.forms form p,
+.forms2 form p {
+    font-size: 11px;
+    width: 100%;
+    margin-left: 0; /* Reset margin */
+    margin-bottom: 10px;
+}
+
+/* Style for form input fields */
+.forms form input[type="text"],
+.forms form input[type="password"],
+.forms form input[type="date"],
+.forms form input[type="email"],
+.forms2 form input[type="text"],
+.forms2 form input[type="password"],
+.forms2 form input[type="date"],
+.forms2 form input[type="email"] {
+    width: 70%;
+    height: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-right: 0%;
+}
+
+/* Style for form buttons */
+.groupButtons,
+.groupButtons2 {
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.groupButtons button,
+.groupButtons2 button {
+    margin: 0 10px; /* Add space between buttons */
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+/* Style for the "Cancel" button */
+.groupButtons button:first-child,
+.groupButtons2 button:first-child {
+    background-color: rgb(255, 76, 76);
+    height: 20px;
+    width: 60px;
+    cursor: pointer;
+}
+
+/* Style for the "Confirm" or "Log In" button */
+.groupButtons button:nth-child(2),
+.groupButtons2 button:nth-child(2) {
+    background-color: rgb(0, 115, 255);
+    height: 20px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.accountAlready {
+    text-align: center;
+} 
+
+.rememberMeClass {
+    margin-left: 5%;
+}
+        
+        /* VISUAL CREDIBILITY */
+
+        .visualCredibility {
+            height: 180px;
+            width: 100%;
+            background-color: rgb(255, 170, 170);
+            margin-top: 5%;
+            display:flex;
+            flex-direction: column;
+            margin-left: 0%;
+        }
+
+        .visualCredibility p {
+            font-size: 0.53rem;
+        }
+        
+        .visualCredibility div {
+            height: 305px;
+            width: 250px;
+            margin-top: 3%;
+            background: linear-gradient(to bottom, rgb(226, 226, 226), rgb(255, 211, 211));
+            margin-left: 25%;
+            border-radius: 0px;
+        }
+        
+        .visualCredibility img {
+            height: 150px;
+            width: 150px;
+            margin-left: 11%;
+            margin-top: 5%;
+        }
+
+        .cosCommunity img {
+            border-radius: 50%;
+            height: 140px;
+            width: 145px; 
+            margin-left: 12%;
+            margin-top: 5%;           
+        }
+
+        .visualCredibility section {
+            height: 240px; 
+            width: 190px;
+            margin: 10px 20px 20px 10px; 
+            background-color: white; 
+            padding: 20px;
+        }
+
+    }
